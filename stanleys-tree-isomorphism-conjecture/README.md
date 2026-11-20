@@ -1,0 +1,27 @@
+# Stanley’s tree isomorphism conjecture
+
+Do two finite unrooted trees with the same chromatic symmetric function have to be isomorphic?
+
+For a tree T, its chromatic symmetric function sums a monomial over every proper coloring by positive integers. The exponent of each variable records the number of vertices receiving that color. Renaming vertices leaves the function unchanged. Stanley asked whether the function contains enough information to recover the tree.
+
+## Research record
+
+- [Literature search and status, November 20, 2026](LITERATURE.md)
+- [A sufficient condition to recover a rooted branch from unrooted cuts](CENTROID.md)
+- [A central-edge obstruction and a coefficient separating an infinite family](CENTRAL-EDGE.md)
+- [A proof distinguishing the segregated and mixed arrangements for every pair of distinct, equal-order rooted branches](SWITCHING.md)
+
+The first proof attempt asks how much of each branch at a centroid can be reconstructed from the sizes of components left by edge cuts. The research target is the unrestricted conjecture.
+
+## Reproducing the checks
+
+Run `python3 verify.py` with standard Python 3. The script computes component sizes directly by deleting edges. It tests the extraction identity at its stated boundary on each rooted tree of order four. For the central-edge obstruction it compares all 8,192 cuts on each of the two 14-vertex trees and checks every three-edge cut on a second pair.
+
+| Check | Observed result |
+| --- | --- |
+| Rooted branch extraction with n=12 and M=4 | All four rooted types recovered |
+| Cut partition (6,6,1,1) in the 14-vertex pair | 8 versus 9 |
+| Cut partition (8,8,1,1) in the 18-vertex pair | 24 versus 25 |
+| Two nonleaf rootings of a five-vertex path | The leaf witness ties. The (11,7,2,2) cut counts differ by one and the moment determinant is positive. |
+
+The general proofs are in the linked notes. These finite examples check sign, multiplicity, and endpoint conventions.
