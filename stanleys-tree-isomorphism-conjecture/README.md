@@ -12,6 +12,14 @@ For a tree T, its chromatic symmetric function sums a monomial over every proper
 - [A proof distinguishing the segregated and mixed arrangements for every pair of distinct, equal-order rooted branches](SWITCHING.md)
 - [Exact linear recovery through three components and a four-component obstruction at all orders 10k](LINEAR-EXTRACTION.md)
 - [Nonlinear recovery from complementary fringe counts on the two sides of a balanced edge](COMPLEMENTARY-FRINGES.md)
+- [Branch multiplicities and reconstruction from an unknown pool](BRANCH-MULTIPLICITIES.md)
+- [A support-sensitive reconstruction bound](SPARSE-BRANCHES.md)
+- [Recovering half-tree fringe histograms](FRINGE-LIFT.md)
+- [Distinguishing exchanges at any two sites of a tree](TWO-SITE-EXCHANGE.md)
+- [Connected-set reconstruction, its exact output, and an infinite obstruction](CONNECTED-INVENTORY.md)
+- [Different inventories with identical full large-component slices](DIFFERENT-POOLS.md)
+- [Known edge contexts and the extra observation they provide](EDGE-CONTEXTS.md)
+- [Formal linear ambiguities for several contexts](LINEAR-CONTEXT-MAPS.md)
 
 The first proof attempt asks how much of each branch at a centroid can be reconstructed from the sizes of components left by edge cuts. The research target is the unrestricted conjecture.
 
@@ -29,3 +37,5 @@ Run `python3 verify.py` with standard Python 3. The script computes component si
 The general proofs are in the linked notes. These finite examples check sign, multiplicity, and endpoint conventions.
 
 For the balanced-edge results, run `python3 verify_stable_relation.py`, `python3 verify_balanced_linear.py`, and `python3 verify_complementary_fringe.py` in this directory. The first check uses proper color classes. The other two enumerate edge deletions.
+
+The independent [proper-coloring check](verify_exchange_colorings.py) counts 156 versus 168 assignments of three named colors used three times each after a limb exchange. It also compares all monomial coefficients in an exchange at automorphic sites.
