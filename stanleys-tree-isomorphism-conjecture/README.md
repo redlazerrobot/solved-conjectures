@@ -20,6 +20,10 @@ For a tree T, its chromatic symmetric function sums a monomial over every proper
 - [Different inventories with identical full large-component slices](DIFFERENT-POOLS.md)
 - [Known edge contexts and the extra observation they provide](EDGE-CONTEXTS.md)
 - [Formal linear ambiguities for several contexts](LINEAR-CONTEXT-MAPS.md)
+- [Joint reconstruction results, the finite search through 28 vertices, and reproduction commands](JOINT-OBSERVATIONS.md)
+- [Obstruction at every fixed cut depth and explicit distinguishing coefficients](CUT-DEPTH.md)
+- [Recovering two-edge cuts from connected sets and large components](JOINT-TRIPLES.md)
+- [Two-edge witnesses for composition switches on caterpillars](CATERPILLAR-SWITCH-CUTS.md)
 
 The first proof attempt asks how much of each branch at a centroid can be reconstructed from the sizes of components left by edge cuts. The research target is the unrestricted conjecture.
 
